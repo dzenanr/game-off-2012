@@ -1,0 +1,137 @@
+github.txt for collision_clones 
+
+GitHub, Git
+
+https://github.com/
+http://www.codeschool.com/courses/try-git
+http://git-scm.com/videos
+http://marklodato.github.com/visual-git-guide/index-en.html
+http://www.siteground.com/tutorials/git/commands.htm
+
+Education
+
+https://github.com/edu
+
+Create an account at GitHub.
+
+Read:
+
+http://help.github.com/win-set-up-git/
+http://www.ralfebert.de/blog/tools/git_screencast/
+http://scottr.org/presentations/git-in-5-minutes/
+
+-------------------------------------------------------------------------------
+
+After creating an account, create a remote repository.
+
+http://help.github.com/create-a-repo/
+
+Create a New Repo at GitHub 
+(without README, since cloning will not be used).
+Repository Name: collision_clones
+Description: 
+  Create a canvas game with moving rectangles of different sizes and colors, 
+  whose objective is to move out the red rectangle without accidents.
+      
+Next steps:
+  cd git/dart/game/collision_clones
+  git init
+  git status
+  git add .
+  git commit -m 'initial version'
+  git remote add origin https://github.com/dzenanr/collision_clones.git
+  git push -u origin master     
+
+-------------------------------------------------------------------------------
+
+Git with Git Bash
+
+Clone a remote repository into a local repository.
+
+cd git/dart/game
+git clone https://github.com/dzenanr/collision_clones.git
+cd collision_clones
+
+Read+Write:
+https://github.com/dzenanr/collision_clones.git
+
+Read only:
+git://github.com/dzenanr/collision_clones.git
+
+Get the latest changes from the remote repository
+
+git pull
+or
+git pull origin master
+
+-------------------------------------------------------------------------------
+
+Work with a local repository
+
+cd git/dart/game/collision_clones
+
+git status
+
+git add .
+
+git status
+
+git commit -m 'short description'
+
+git status
+
+git rm file
+
+git status
+
+git push
+or
+git push origin master
+
+git status
+
+-------------------------------------------------------------------------------
+
+Tagging for versions (spirals)
+
+http://learn.github.com/p/tagging.html
+
+git tag
+git tag -a s00 -m 'spiral 00'
+git tag
+
+To push tags to the remote repository:
+
+git push --tags
+
+s00: 
+s01: if collision, change red car
+s02: improve collision verification
+s03: add collision sound
+s04: add score and time; draw rectangles as cars
+s05: cars speed input; stop button
+s06: add car git labels; display git command descriptions
+
+-------------------------------------------------------------------------------
+
+Switching from master to spiral
+
+from master to tag
+git checkout s01
+from tag to branch
+git checkout -b s01a
+to use branch
+git checkout s01a
+
+
+Switching from spiral to master
+
+to exclude js:
+git checkout art_pen.dart.js
+or 
+(see http://scottr.org/presentations/git-in-5-minutes/)
+git stash
+
+git checkout master
+
+
