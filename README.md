@@ -11,4 +11,7 @@ Dependent on the
 [simple_audio] (https://github.com/johnmccutchan/simpleaudio) library.
 Use the Pub Manager in Dart Editor.
 
-# ![Alt Collision Clones] (https://raw.github.com/dzenanr/game_cars/master/img/screenshot.png)
+Spirals of the game are tags in the [collision_clones] (https://github.com/dzenanr/collision_clones) project.
+Spiral 06 is used as a [GitHub game competition] (https://github.com/blog/1303-github-game-off) entry.
+
+# ![Alt Collision Clones] (https://raw.github.com/dzenanr/game-off-2012/master/img/screenshot.png)
